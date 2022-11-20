@@ -1,6 +1,7 @@
+import React from 'react'
 import './App.css';
-import Jumbo from './Components/Jumbo';
-import AppNavbar from './Components/NavBar';
+import Jumbo from './components/Jumbo';
+import AppNavbar from './components/NavBar';
 
 function App() {
   return (
