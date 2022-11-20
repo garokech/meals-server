@@ -1,14 +1,15 @@
 import './App.css';
-import MyJumbotron from './components/Jumbotron';
 import Navbar  from './components/NavigationBar';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="jumbotron">
       <Navbar />
-      <MyJumbotron />
+      <Home />
     </div>
   );
 }
 
 export default App;
+
