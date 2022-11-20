@@ -4,18 +4,22 @@ import {InputGroup, Form, Button} from 'react-bootstrap'
 
 function Jumbo() {
   return (
-    <>
-        <InputGroup className="mb-3">
-        <Form.Control
-          placeholder="Recipient's username"
-          aria-label="Recipient's username"
-          aria-describedby="basic-addon2"
-        />
-        <Button variant="outline-secondary" id="button-addon2">
-          Button
-        </Button>
-      </InputGroup>
-    </>
+    <div className="jumbo">
+        <h1>Welcome</h1>
+        <h2>Find your Recipe!</h2>
+        <div className="search-bar">
+            <InputGroup className="mb-3">
+            <Form.Control
+            placeholder="Search a recipe!"
+            aria-label="Search for recipe"
+            aria-describedby="search-button"
+            />
+            <Button variant="danger" id="search-button">
+            Button
+            </Button>
+        </InputGroup>
+      </div>
+    </div>
   )
 }
 
