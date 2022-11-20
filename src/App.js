@@ -1,15 +1,15 @@
 import './App.css';
 import AppNavbar from "./components/NavBar";
-import 
 
 
 function App() {
   return (
     <div>
+      <AppNavbar />
       <h1>recipe App</h1>
     </div>
   );
 }
 
-export default AppNavbar;
+export default App;
  
