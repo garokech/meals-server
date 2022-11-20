@@ -7,7 +7,7 @@ function Home() {
   const [recipes, setRecipes] = useState([]);
   useEffect(() => {
     axios
-    .get('https://www.themealdb.com/api/json/v1/1/search.php?f=a')
+    .get('https://www.themealdb.com/api/json/v1/1/search.php?f=')
     .then(({ data }) => setRecipes(data.recipes))
     .catch((error) => console.log(error))
   }, []);
