@@ -5,6 +5,8 @@ import {InputGroup, Form, Button} from 'react-bootstrap'
 function Jumbo() {
   return (
     <div className="jumbo">
+        <h1>Welcome</h1>
+        <h2>Find your Recipe!</h2>
         <div className="search-bar">
             <InputGroup className="mb-3">
             <Form.Control

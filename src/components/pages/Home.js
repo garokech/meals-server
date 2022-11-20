@@ -1,8 +1,11 @@
 import React from 'react'
+import Jumbo from '../Jumbo'
 
 function Home() {
   return (
-    <div>home</div>
+    <div>
+      <Jumbo />
+    </div>
   )
 }
 
