@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react';
 import MyJumbotron from '../../components/Jumbotron';
 import axios from 'axios';
 import RecipeContainer from '../../components/RecipeContainer';
+import React, { Component }  from 'react';
 
 
 function Home() {
