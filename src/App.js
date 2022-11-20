@@ -1,11 +1,12 @@
 import './App.css';
-import AppNavbar from "./components/NavBar";
-
+import Jumbo from './Components/Jumbo';
+import AppNavbar from './Components/NavBar';
 
 function App() {
   return (
     <div>
       <AppNavbar />
+      <Jumbo />
       <h1>recipe App</h1>
     </div>
   );
