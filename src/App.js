@@ -1,5 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
+import AppNavbar from "./components/NavBar";
+import 
+
 
 function App() {
   return (
@@ -9,5 +11,5 @@ function App() {
   );
 }
 
-export default App;
+export default AppNavbar;
  
