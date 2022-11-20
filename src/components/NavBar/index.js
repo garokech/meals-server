@@ -16,7 +16,8 @@ function AppNavbar() {
           </Nav>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+    </Navbar> 
+    
   );
 }
 
