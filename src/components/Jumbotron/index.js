@@ -10,7 +10,7 @@ function MyJumbotron() {
   const {setRecipes} = useContext(MyContext)
   function handleSearch(search){
       axios
-      .get(`https://tasty.p.rapidapi.com/recipes/auto-complete=${search}`)
+      .get("https://tasty.p.rapidapi.com/recipes/auto-complete=${search}")
       .then((({data})=> setRecipes(data.recipes)))
   }
 
