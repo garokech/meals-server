@@ -1,6 +1,5 @@
 import './App.css';
-import Jumbo from './Components/Jumbo';
-import AppNavbar from './Components/NavBar';
+import AppNavbar from './Components/NavBar/index';
 import Home from './Components/pages/Home';
 
 function App() {
