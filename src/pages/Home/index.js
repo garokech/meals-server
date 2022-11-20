@@ -9,7 +9,7 @@ function Home() {
     const [recipes, setRecipes] = useState([]);
     useEffect(() =>{
         axios
-          .get('https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch')
+          .get('https://tasty.p.rapidapi.com/recipes/list')
           .then(({data}) => setRecipes(data.recipes))
           .catch((error) => console.log(error));
       },[]);
