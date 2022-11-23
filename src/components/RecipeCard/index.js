@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import {Card} from "react-bootstrap";
 import {Button} from "react-bootstrap";
 
@@ -26,5 +27,24 @@ function RecipeCard({strMeal,strMealThumb}) {
     </Card>
   );
 }
+=======
+import { Card } from "react-bootstrap";
+import { Button } from "react-bootstrap"
+
+function RecipeCard({strMeal, strMealThumb}) {
+    return (
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={strMealThumb} />
+        <Card.Body>
+          <Card.Title>{strMeal}</Card.Title>
+          <Card.Text>
+            {}
+          </Card.Text>
+          <Button variant="primary">See More</Button>
+        </Card.Body>
+      </Card>
+    );
+  }
+>>>>>>> ec341c62fee6d276c8bb43257302afe1e2398bba
 
 export default RecipeCard;
