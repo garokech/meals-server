@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="jumbotron">
       <Navbar />
-      <MyJumoTron />
+      <MyJumboTron />
     </div>
   );
 }

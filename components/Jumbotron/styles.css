@@ -1,3 +1,11 @@
 .jumbotron {
-    
+    background-image: linear-gradient((rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8))),
+     url(https://st2.depositphotos.com/5575750/8869/v/950/depositphotos_88692298-stock-illustration-recipe-book-cover-concept.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
