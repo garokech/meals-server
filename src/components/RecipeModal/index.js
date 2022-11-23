@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Modal, Button} from "react-bootstrap";
 
-function RecipeModal(title, description) {
+function RecipeModal({title, description}) {
 const [show, setShow] = useState(false);
 
 const handleClose = () => setShow(false);
