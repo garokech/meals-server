@@ -1,11 +1,7 @@
 import './App.css';
 import AppContext from './context';
-import AppNavbar from './components/NavBar';
-import Home from './components/pages/Home';
-
 import AppNavbar from './Components/NavBar';
-
-import Home from './Components/pages/Home';
+import Home from './Components/pages/test';
 
 function App() {
   return (
