@@ -4,18 +4,20 @@ import { InputGroup, FormControl, Button } from "react-bootstrap";
 
 function MyJumbotron() {
     return (
-        <>
+        <div className="my-jumbotron">
+          <div className="button-input">
         <InputGroup className="mb-3">
         <FormControl
-          placeholder="Recipient's username"
-          aria-label="Recipient's username"
-          aria-describedby="basic-addon2"
+          placeholder="Search for a Meal"
+          aria-label="Meal Search Input"
+          aria-describedby="meal-search-button"
         />
-        <Button variant="outline-secondary" id="button-addon2">
+        <Button variant="danger" id="button-addon2">
           Button
         </Button>
       </InputGroup>
-        </>
+        </div>
+        </div>
     );
 }
 
