@@ -1,7 +1,8 @@
 import './App.css';
 import AppContext from './context';
 import AppNavbar from './components/NavBar';
-import Home from './components/pages/Home';
+import Home from './pages/Home';
+import React from 'react';
 
 function App() {
   return (

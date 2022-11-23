@@ -3,7 +3,7 @@ import "./styles.css";
 import RecipeCard from "../RecipeCard";
 
 function RecipeContainer() {
-  const [recipes] = React.useState([]);
+  const [meals] = React.useState([]);
   // return (
   //   <div className='recipe-container'>
   //       {recipes.map((recipe) => (
@@ -13,7 +13,7 @@ function RecipeContainer() {
   // );
   return (
     <div className='recipe-container'>
-      <RecipeCard key={recipes.idRecipes} {...recipes} />
+      <RecipeCard key={meals.idMeals} {...meals} />
     </div>
   )
 }

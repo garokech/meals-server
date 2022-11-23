@@ -7,15 +7,15 @@ import axios from "axios"
 function Jumbo() {
   const [searchInput, setsearchInput] = useState("");
   const {count} = useContext(MyContext);
-  const {setRecipes} = useContext(MyContext)
+  const {setMeals} = useContext(MyContext)
   function handleSearch(){
       axios
       .get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchInput}`)
-      .then((({data})=> setRecipes(data.recipes)))
+      .then((({data})=> setMeals(data.Meals)))
   }
 
   return (
-  <div className="my-jumbotron">
+  <div className="jumbo">
     <h1>Welcome</h1>
     <h2>Find the best recipes here!</h2>
     <div className="button-input">
