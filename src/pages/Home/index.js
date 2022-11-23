@@ -17,7 +17,7 @@ function Home() {
   return (
     <div>
         <Jumbo /> 
-        <RecipeContainer meals={meals}/>
+        <RecipeContainer meals={meals} />
     </div>
   )
 }

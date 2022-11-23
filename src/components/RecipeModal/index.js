@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Modal, Button} from "react-bootstrap";
 
-function RecipeModal(strMeal) {
+function RecipeModal(title, description) {
 const [show, setShow] = useState(false);
 
 const handleClose = () => setShow(false);
@@ -15,9 +15,9 @@ const handleShow = () => setShow(true);
 
         <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton>
-                <Modal.Title>strMeal</Modal.Title>
+                <Modal.Title>{title}</Modal.Title>
             </Modal.Header>
-            <Modal.Body>Woohoo, you're reading this text in a modal</Modal.Body>
+            <Modal.Body>{description}</Modal.Body>
             <Modal.Footer>
                 <Button variant="secondary" onClick={handleClose}>
                     Close
