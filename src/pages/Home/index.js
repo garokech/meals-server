@@ -7,10 +7,11 @@ import { MyContext } from '../../context';
 
 
 function Home() {
-  const {meals, setMeals} = useContext(MyContext)
+  const {meals, setMeals} = useContext(MyContext);
+  const [searchInput] = useState("");
   useEffect(() =>{
         axios
-          .get('https://www.themealdb.com/api/json/v1/1/search.php?s=chicken%27')
+          .get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchInput}`)
           .then(({data}) => setMeals(data.meals))
           .catch((error) => console.log(error));
       },[]);
