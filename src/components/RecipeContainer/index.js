@@ -13,7 +13,7 @@ function RecipeContainer() {
   // );
   return (
     <div className='recipe-container'>
-      <RecipeCard key={meals.idRecipes} {...meals} />
+      <RecipeCard key={meals.idMeal} {...meals} />
     </div>
   )
 }
