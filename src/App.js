@@ -1,13 +1,13 @@
 import './App.css';
-import Navbar  from './components/NavigationBar';
 import AppContext from './context';
-import Home from './pages/Home';
+import AppNavbar from './components/NavBar';
+import Home from './components/pages/Home';
 
 function App() {
   return (
     <AppContext>
-    <div className="jumbotron">
-      <Navbar />
+    <div>
+      <AppNavbar />
       <Home />
     </div>
     </AppContext>
@@ -15,4 +15,3 @@ function App() {
 }
 
 export default App;
-

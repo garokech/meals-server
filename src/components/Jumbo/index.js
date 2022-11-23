@@ -4,7 +4,7 @@ import { InputGroup, FormControl, Button } from "react-bootstrap";
 import { MyContext } from "../../context"
 import axios from "axios"
 
-function MyJumbotron() {
+function Jumbo() {
   const [searchInput, setsearchInput] = useState("");
   const {count} = useContext(MyContext);
   const {setRecipes} = useContext(MyContext)
@@ -37,4 +37,4 @@ function MyJumbotron() {
   
 }
 
-export default MyJumbotron;
+export default Jumbo;
