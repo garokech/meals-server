@@ -3,8 +3,8 @@ export const MyContext = createContext();
 
 
 function AppContext({children}){
-    const [recipes, setRecipes] = useState([]);
-    return <MyContext.Provider value={{ recipes, setRecipes }}>
+    const [meals, setMeals] = useState([]);
+    return <MyContext.Provider value={{ meals, setMeals }}>
         {children}
     </MyContext.Provider>
 }
