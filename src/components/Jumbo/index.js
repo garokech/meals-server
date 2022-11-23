@@ -11,7 +11,7 @@ function Jumbo() {
   function handleSearch(){
       axios
       .get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchInput}`)
-      .then((({data})=> setMeals(data.Meals)))
+      .then((({data})=> setMeals(data.meals)))
   }
 
   return (
@@ -34,7 +34,7 @@ function Jumbo() {
     </div>
   </div>
   );
-  
+
 }
 
 export default Jumbo;

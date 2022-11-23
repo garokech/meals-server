@@ -1,11 +1,9 @@
-import {createContext, useState, React} from 'react';
+import React,{createContext, useState, Component} from 'react';
 export const MyContext = createContext();
-import {React} from 'react';
-
 
 function AppContext({children}){
-    const [recipes, setRecipes] = useState([]);
-    return <MyContext.Provider value={{ recipes, setRecipes }}>
+    const [meals, setMeals] = useState([]);
+    return <MyContext.Provider value={{ meals, setMeals }}>
         {children}
     </MyContext.Provider>
 }
