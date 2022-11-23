@@ -1,17 +1,18 @@
 import React from 'react';
-import {Card} from "react-bootstrap";
-import{ Button } from "react-bootstrap"
+import {Card, Button} from "react-bootstrap";
+import RecipeModal from '../RecipeModal';
 
-function RecipeCard({strRecipe}) {
+function RecipeCard({strRecipe, strMealThumb}) {
   return (
     <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Img variant="top" src="strMealThumb" />
             <Card.Body>
                 <Card.Title>{strRecipe}</Card.Title>
-                <Button variant="primary">Yummy</Button>
+                <RecipeModal {...strMeal}/>
+                {/* <Button variant="primary">Yummy</Button> */}
             </Card.Body>
     </Card>
   );
   }
 
-export default RecipeCard
+export default RecipeModal;
