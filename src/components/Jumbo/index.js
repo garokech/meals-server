@@ -15,7 +15,7 @@ function Jumbo() {
   }
 
   return (
-  <div className="my-jumbotron">
+  <div className="jumbo">
     <h1>Welcome</h1>
     <h2>Find the best recipes here!</h2>
     <div className="button-input">
@@ -34,7 +34,7 @@ function Jumbo() {
     </div>
   </div>
   );
-  
+
 }
 
 export default Jumbo;
