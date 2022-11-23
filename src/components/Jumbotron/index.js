@@ -8,9 +8,9 @@ function MyJumbotron() {
   const [searchInput, setsearchInput] = useState("");
   const {count} = useContext(MyContext);
   const {setRecipes} = useContext(MyContext)
-  function handleSearch(search){
+  function handleSearch(){
       axios
-      .get("https://tasty.p.rapidapi.com/recipes/auto-complete=${search}")
+      .get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchInput}`)
       .then((({data})=> setRecipes(data.recipes)))
   }
 
