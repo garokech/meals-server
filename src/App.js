@@ -1,20 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-import Home from "./pages/Home";
-import axios from 'axios'
-import {useEffect} from 'react'
+import AppContext from './context';
+import AppNavbar from './components/NavBar';
+import Home from './components/pages/Home';
+
+import AppNavbar from './Components/NavBar';
+
+import Home from './Components/pages/Home';
 
 function App() {
-  useEffect(() => {
-    axios
-    .get('https://www.themealab.com/api/json/v1/1/search.php?f=a')
-    .then(data => console.log(data))
-  }, [])
   return (
-    <div className="jumbotron">
-      <Navbar />
-      <MyJumboTron />
+    <AppContext>
+    <div>
+      <AppNavbar />
+      <Home />
     </div>
+    </AppContext>
   );
 }
 
