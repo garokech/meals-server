@@ -2,8 +2,11 @@ import './App.css';
 import AppContext from './context';
 import AppNavbar from './components/NavBar';
 import Home from './pages/Home';
-import React from 'react';
-import {Route, BrouserRouter as Router, Switch} from 'react-router-dom'
+import {Route, BrowserRouter as Router, Routes} from 'react-router-dom';
+import ErrorPage from './pages/404/404';
+import Login from './pages/login/login';
+import Signup from './pages/signup/signup';
+import React, { Component }  from 'react';
 
 function App() {
   return (
@@ -11,14 +14,21 @@ function App() {
     <AppContext>
     <div className="Jumbo">
       <AppNavbar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
+      <Routes>
+        <Route exact path="/" element={<Home />}>
+          
         </Route>
-        <Route exact path="/login">
-          <Home />
+        <Route exact path="/login" element={<Login/>}>
+          
         </Route>
-      </Switch>
+        <Route exact path="/signup" element={<Signup/>}>
+          
+          </Route>
+        <Route path="*" element={<ErrorPage/>} >
+          
+        </Route>
+        
+      </Routes>
     </div>
     </AppContext>
     </Router>
