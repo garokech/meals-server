@@ -1,22 +1,40 @@
-import React from 'react'
-import './styles.css'
-import {InputGroup, Form, Button} from 'react-bootstrap'
+import React, {useState, useContext} from "react";
+import "./styles.css";
+import { InputGroup, FormControl, Button } from "react-bootstrap";
+import { MyContext } from "../../context"
+import axios from "axios"
 
 function Jumbo() {
+  const [searchInput, setsearchInput] = useState("");
+  const {count} = useContext(MyContext);
+  const {setMeals} = useContext(MyContext)
+  function handleSearch(){
+      axios
+      .get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchInput}`)
+      .then((({data})=> setMeals(data.meals)))
+  }
+
   return (
-    <>
-        <InputGroup className="mb-3">
-        <Form.Control
-          placeholder="Recipient's username"
-          aria-label="Recipient's username"
-          aria-describedby="basic-addon2"
+  <div className="jumbo">
+    <h1>Welcome</h1>
+    <h2>Find the best recipes here!</h2>
+    <div className="button-input">
+       <InputGroup className="mb-3">
+        <FormControl
+          placeholder="Search for a Recipe"
+          aria-label="Recipe Searcher"
+          aria-describedby="recipe-finder"
+          value={searchInput}
+          onChange={(e) => setsearchInput(e.target.value)}
         />
-        <Button variant="outline-secondary" id="button-addon2">
-          Button
+        <Button variant="danger" id="recipe-finder" onClick={handleSearch}>
+          Get to Cooking!
         </Button>
       </InputGroup>
-    </>
-  )
+    </div>
+  </div>
+  );
+
 }
 
 export default Jumbo;
