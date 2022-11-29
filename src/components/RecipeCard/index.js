@@ -5,7 +5,7 @@ import RecipeModal from '../RecipeModal'
 
 function RecipeCard({strMeal, strMealThumb, strInstructions }) {
     return (
-      <Card style={{ width: '18rem' }}>
+      <Card style={{ width: '16rem' }}>
         <Card.Img variant="top" src={strMealThumb} />
         <Card.Body>
           <Card.Title>{strMeal}</Card.Title>
