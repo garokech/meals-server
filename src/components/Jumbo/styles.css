@@ -11,7 +11,10 @@
 }
 .jumbo h1,h2 {
     color: whitesmoke;
+    padding: 5%;
 }
+
+
 
 .search-bar {
     width: 60%;
