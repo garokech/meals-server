@@ -1,9 +1,13 @@
-import React , { useState }from "react";
+import React , {useContext, useState }from "react";
 import { Form, Button } from "react-bootstrap";
+import MyContext from "../../context";
 import axios from "axios";
 function Signup() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const {  setUser } = useContext(MyContext) || {};
+
+
     function handleSignup(e) {
       e.preventDefault();
       if (!email || !password) {
@@ -11,7 +15,7 @@ function Signup() {
       }
       axios
         .post("http://localhost:5000/users", { email, password })
-        .then(({ data }) => console.log(data))
+        .then(({ data }) => setUser(data))
         .catch((err) => console.log(err));
     }
     return (
@@ -35,6 +39,7 @@ function Signup() {
             <Form.Control 
             type="password" 
             placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)}
             value={password}
             required
             />
