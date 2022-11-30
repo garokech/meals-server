@@ -10,7 +10,6 @@ import { MyContext } from "./context";
 import React from 'react';
 
 function App() {
-  const { user } = useContext(MyContext)
   return (
     <Router>
     <div className="Jumbo">
