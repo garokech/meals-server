@@ -3,9 +3,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import { LinkContainer } from "react-router-bootstrap";
 import Navbar from 'react-bootstrap/Navbar';
+import "./styles.css";
 function AppNavbar() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="dark" expand="lg" style={{$color:'#565a75'}}>
       <Container>
         <LinkContainer to="/">
           <Navbar.Brand>Meals</Navbar.Brand>
