@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import React from "react";
 export const MyContext = createContext();
 
 function AppContext({ children }) {
