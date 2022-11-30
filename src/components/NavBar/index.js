@@ -5,7 +5,6 @@ import { LinkContainer } from "react-router-bootstrap";
 import Navbar from 'react-bootstrap/Navbar';
 import { MyContext } from '../../context';
 import { useContext } from 'react';
-import React from 'react';
 
 function AppNavbar() {
   const {user} = useContext(MyContext)
