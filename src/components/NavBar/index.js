@@ -3,22 +3,21 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import { LinkContainer } from "react-router-bootstrap";
 import Navbar from 'react-bootstrap/Navbar';
-import "./styles.css";
 function AppNavbar() {
   return (
-    <Navbar bg="dark" expand="lg" style={{$color:'#565a75'}}>
+    <Navbar expand="lg" style={{$color:'#565a75'}}>
       <Container>
         <LinkContainer to="/">
-          <Navbar.Brand>Meals</Navbar.Brand>
+          <Navbar.Brand className='text-light'>Meals</Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <LinkContainer to="/login">
-                <Nav.Link>Login</Nav.Link>
+                <Nav.Link className='text-light'>Login</Nav.Link>
               </LinkContainer>{" "}
               <LinkContainer to="/signup">
-                <Nav.Link>Signup</Nav.Link>
+                <Nav.Link className='text-light'>Signup</Nav.Link>
               </LinkContainer>
             </Nav>
         </Navbar.Collapse>
