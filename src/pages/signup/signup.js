@@ -18,6 +18,7 @@ function Signup() {
         .then(({ data }) => setUser(data))
         .catch((err) => console.log(err));
     }
+    
     return (
         <Form onSubmit={handleSignup}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -46,7 +47,7 @@ function Signup() {
           </Form.Group>
     
           <Button variant="primary" type="submit">
-            Login
+            Sign Up
           </Button>
         </Form>
       );
