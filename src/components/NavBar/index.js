@@ -22,11 +22,7 @@ function AppNavbar() {
                 <Nav.Link className='text-light'>Login</Nav.Link>
               </LinkContainer>{" "}
               <LinkContainer to="/signup">
-<<<<<<< HEAD
                 <Nav.Link className='text-light'>Signup</Nav.Link>
-=======
-                <Nav.Link>Signup</Nav.Link> 
->>>>>>> e1f8eebc10238f1bc36bec4bfbe65fdaf963a29d
               </LinkContainer>
             </Nav>
             )}

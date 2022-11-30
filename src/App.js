@@ -1,11 +1,6 @@
 import React from 'react'
 import './App.css';
-<<<<<<< HEAD
-import AppContext from './context';
 import AppNavbar from './components/NavBar';
-=======
-import AppNavbar from './Components/NavBar';
->>>>>>> e1f8eebc10238f1bc36bec4bfbe65fdaf963a29d
 import Home from './pages/Home';
 import {Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import ErrorPage from './pages/404/404';
