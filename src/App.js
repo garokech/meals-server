@@ -1,5 +1,6 @@
+import React from 'react'
 import './App.css';
-import AppNavbar from './Components/NavBar';
+import AppNavbar from './components/NavBar';
 import Home from './pages/Home';
 import {Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import ErrorPage from './pages/404/404';
